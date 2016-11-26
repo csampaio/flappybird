@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Flappy Bird</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>8ipsyo3a1cuc</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Bird" sid="228606708116658">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="191872713181624">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="873095470912953">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725473017786670" speed="6">
+                    <frame duration="1" hotspotX="0.496471" hotspotY="0.495146" original-source="E:\projetos\PosUEA\flapyBird\Assets\Bacalhau1.png">
+                        <collision-poly>
+                            <point x="0.152941" y="0.200647" />
+                            <point x="0.494118" y="0.174757" />
+                            <point x="0.663529" y="0.440129" />
+                            <point x="0.682353" y="0.491909" />
+                            <point x="0.870588" y="0.831715" />
+                            <point x="0.494118" y="0.902913" />
+                            <point x="0.167059" y="0.76699" />
+                            <point x="0.369412" y="0.491909" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508235" hotspotY="0.530303" original-source="E:\projetos\PosUEA\flapyBird\Assets\Bacalhau2.png">
+                        <collision-poly>
+                            <point x="0.152941" y="0.0643939" />
+                            <point x="0.494118" y="0.136364" />
+                            <point x="0.649412" y="0.367424" />
+                            <point x="0.870588" y="0.80303" />
+                            <point x="0.494118" y="0.886364" />
+                            <point x="0.167059" y="0.727273" />
+                            <point x="0.24" y="0.405303" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.485915" hotspotY="0.465608" original-source="E:\projetos\PosUEA\flapyBird\Assets\Bacalhau3.png">
+                        <collision-poly>
+                            <point x="0.314554" y="0.0529101" />
+                            <point x="0.495305" y="0.0582011" />
+                            <point x="0.650235" y="0.116402" />
+                            <point x="0.870892" y="0.724868" />
+                            <point x="0.495305" y="0.84127" />
+                            <point x="0.169014" y="0.619048" />
+                            <point x="0.0516432" y="0.169312" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background" sid="206486484460749">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="510216300480634">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Ground" sid="718315212860252">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="758545865986838">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="417904438180937">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Keyboard" sid="304451475015914">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite" sid="312593416429811">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690042225222049" speed="5">
+                    <frame duration="1" hotspotX="0.501401" hotspotY="0.5" original-source="C:\Users\csampaio\Downloads\fbirdsprite.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PipeTop" sid="100187056055555">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Passed" sid="702128542173475" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="461509081816018">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="329788151729623">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="453416569386205">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>PipeTop</type>
+                <type>times</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721973887553598" speed="5">
+                    <frame duration="1" hotspotX="0.537037" hotspotY="1">
+                        <image-point name="TimePoint" x="0.5" y="0.883041" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PipeDown" sid="735231670990225">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="536157944251829">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="817670371259953">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="824573035639999">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>PipeDown</type>
+                <type>times2</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808483150352351" speed="5">
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.00438596">
+                        <image-point name="timePoint" x="0.481481" y="0.109649" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="206485790570550">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="times" sid="189334742659156">
+            <plugin id="Sprite" />
+            <container>
+                <type>PipeTop</type>
+                <type>times</type>
+            </container>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="137727519691676" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.491979" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.51875" hotspotY="0.524752" />
+                    <frame duration="1" hotspotX="0.497512" hotspotY="0.514852" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508333" />
+                    <frame duration="1" hotspotX="0.48913" hotspotY="0.55" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="times2" sid="885544463395868">
+            <plugin id="Sprite" />
+            <container>
+                <type>PipeDown</type>
+                <type>times2</type>
+            </container>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="482396394502872" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.491979" hotspotY="0.535714" />
+                    <frame duration="1" hotspotX="0.51875" hotspotY="0.524752" />
+                    <frame duration="1" hotspotX="0.497512" hotspotY="0.514852" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508333" />
+                    <frame duration="1" hotspotX="0.48913" hotspotY="0.55" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="933860801493706">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Main.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
