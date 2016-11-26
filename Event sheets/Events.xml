@@ -31,14 +31,20 @@
                 <action behavior="Platform" id="11" name="Set enabled" sid="394930466506982" type="Bird">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="982960687300584" type="Text">
+                <action id="-15" name="Set visible" sid="982960687300584" type="Derrota">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="652427717189280" type="Vasco">
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="413474569719699" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
                 <action id="-21" name="Reset global variables" sid="250586472978430" type="System" />
-                <action id="-15" name="Set visible" sid="435913804470155" type="Text">
+                <action id="-15" name="Set visible" sid="435913804470155" type="Derrota">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="248254222346414" type="Vasco">
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-26" name="Restart layout" sid="489648120028302" type="System" />
@@ -59,6 +65,21 @@
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="9" name="Set vector Y" sid="499443646104577" type="Bird">
+                            <param id="0" name="Vector Y">-650</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="792313974275539">
+                    <conditions>
+                        <condition id="14" name="On tap" sid="830011363791325" type="Touch" />
+                        <condition id="-8" name="Compare two values" sid="701166526966368" type="System">
+                            <param id="0" name="First value">isDead</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="554486673092074" type="Bird">
                             <param id="0" name="Vector Y">-650</param>
                         </action>
                     </actions>

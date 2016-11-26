@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -219,8 +220,39 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="933860801493706">
+        <object-type name="Derrota" sid="933860801493706">
             <plugin id="Text" />
+            <container>
+                <type>Vasco</type>
+                <type>Derrota</type>
+            </container>
+        </object-type>
+        <object-type name="Vasco" sid="919945361082083">
+            <plugin id="Sprite" />
+            <container>
+                <type>Vasco</type>
+                <type>Derrota</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527140575880780" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501976" original-source="E:\projetos\PosUEA\flappybird\Assets\vasco.png">
+                        <image-point name="Texto" x="0.5" y="1.08696" />
+                        <collision-poly>
+                            <point x="0.235" y="0.185771" />
+                            <point x="0.5" y="0" />
+                            <point x="0.77" y="0.181818" />
+                            <point x="0.99" y="0.498024" />
+                            <point x="0.795" y="0.837945" />
+                            <point x="0.5" y="1" />
+                            <point x="0.2" y="0.841897" />
+                            <point x="0.01" y="0.498024" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="937263396483184">
+            <plugin id="Touch" />
         </object-type>
     </object-folder>
     <families />
@@ -232,6 +264,11 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Touch" uid="12">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

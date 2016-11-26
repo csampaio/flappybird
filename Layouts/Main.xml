@@ -328,6 +328,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="Vasco" uid="11">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>255.505401611</width>
+                        <height>323.214324951</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501976311</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Score" uid="7">
                     <properties>
                         <text>0</text>
@@ -355,7 +377,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="10">
+                <instance type="Derrota" uid="10">
                     <properties>
                         <text>CAIU!!!!</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -371,7 +393,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>320</y>
+                        <y>517</y>
                         <z>0</z>
                         <width>230</width>
                         <height>135</height>

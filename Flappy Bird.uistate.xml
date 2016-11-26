@@ -34,5 +34,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PipeDown/" />
         <folder expanded="1" path="animation-folder/times/" />
         <folder expanded="1" path="animation-folder/times2/" />
+        <folder expanded="1" path="animation-folder/Vasco/" />
     </folders-expanded>
 </c2uistate>
