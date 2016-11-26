@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1480184781,
+	"version": 1480191464,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -13,6 +13,7 @@
 		"images/pipedown-sheet0.png",
 		"images/times-sheet0.png",
 		"images/times-sheet1.png",
+		"images/vasco-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
